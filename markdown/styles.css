@@ -1,0 +1,55 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-container {
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    min-width: 160px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.dropdown-content div {
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-content div:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700 !important;
+}
+
+h1 {
+    font-size: xx-large !important;
+}
+
+h2 {
+    font-size: x-large !important;
+}
+
+h3 {
+    font-size: larger !important;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Editor</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="max-w-5xl mx-auto mt-6">
+        <div class="flex flex-row gap-x-1 relative z-10 w-fit left-7" style="top: 72px" id="button-container">
+            <div>
+                <img src="assets/images/icons/plus.svg" class="cursor-pointer" />
+            </div>
+            <div class="dropdown">
+                <img src="assets/images/icons/drag.svg" class="cursor-pointer dropbtn"
+                    onclick="onDropDownToggle(this)" />
+                <div class="dropdown-content">
+                    <div id="add-p-element">Text</div>
+                    <div id="add-h1-element">Heading 1</div>
+                    <div id="add-h2-element">Heading 2</div>
+                    <div id="add-h3-element">Heading 3</div>
+                    <div id="add-blockquote-element">Quote</div>
+                    <div id="add-code-element">Code</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container flex flex-col p-6 px-6 gap-y-3" id="content-container">
+            <div class="flex content-container px-14 p-4 bg-gray-50 rounded">
+                <div contenteditable="true" class="w-full p-2 focus:border-0 focus:ring-0">
+                    Hello all this is me
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <p>
+        Paragraph
+        <b>Bold</b>
+        <i>Italic</i>
+        <u>Underline</u>
+        <strike>Strike</strike>
+        <a href="#">Link</a>
+    </p>
+
+    <blockquote style="border-left: 1px solid gray; background-color: azure;">
+        Quote
+    </blockquote>
+    <code>
+        Code
+    </code>
+    <hr>
+    <img src="https://picsum.photos/seed/picsum/200" alt="image" style="width:min-content; border-radius: 5px;"> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
